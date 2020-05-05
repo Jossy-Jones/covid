@@ -38,6 +38,8 @@ require "backend/index_ctrl.php";
 			<span class="number deaths"> <?php echo number_format($global->TotalDeaths)?></span> <br> <br>
 			<h3 >Recovered:</h3>
 			<span class="number recovered"> <?php echo number_format($global->TotalRecovered)?></span>
+			<h3>Active Cases:</h3>
+			<span class="number active"><?php echo number_format($global->TotalConfirmed - ($global->TotalRecovered + $global->TotalDeaths)) ?></span>
 		 </div>
 		 <!-- <div class="cases-holder">
 			<div class="active-cases">

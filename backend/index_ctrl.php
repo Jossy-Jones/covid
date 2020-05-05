@@ -14,6 +14,19 @@ function getCovidData() {
         return $client->response;
 }
 
+function getCovidCtry($ctry) {
+    $client = new SausageHTTP\SausageHTTP\SausageHTTP();
+    $client->setRequest([
+            "URL" => 'https://api.covid19api.com/country/'.$ctry.'/', 
+            "METHOD" => 'GET', 
+            "OPTIONS" => array(
+                
+            ) 
+        ]);
+    
+        return $client->response;
+}
+
 
 
 function getFlag($arg) {
