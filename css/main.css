@@ -1,0 +1,219 @@
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.entire-wrapper{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 1400px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  width: fit-content;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+/* --------------body content--------------- */
+.body-content{
+  display: grid;
+  grid-template-rows:  1fr;
+  grid-gap: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.patients{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  
+}
+.cases-holder{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+}
+
+/* -------end of grids------------ */
+.covid-cases{
+  border: 2px solid #f5f5f5;
+  text-align: center;
+}
+.covid-cases h3{
+  font-weight: 600;
+}
+.covid-cases .deaths{
+  color: red;
+}
+.number{
+  font-size: 35px;
+  font-weight: 700;
+  color: #AAAAAA;
+}
+.covid-cases a{
+  color: #8ACA2B;
+}
+.recovered{ color: #8ACA2B;
+
+}
+
+.active-cases{
+  text-align: center;
+  border: 2px solid #f5f5f5;
+}
+.closed-cases{
+  text-align: center;
+  border: 2px solid #f5f5f5;
+}
+
+.active-cases h3{
+  background-color: #f5f5f5;
+  font-weight: 400;
+}
+
+.active-cases .p{
+  font-weight: 500;
+}
+
+.blue-fig{
+  color: blue;
+  font-weight: 500;
+
+}
+.txt{
+  color: black
+}
+
+
+.other{
+  color: red;
+  font-weight: 500;
+}
+
+
+.closed-cases h3{
+  background-color: #f5f5f5;
+  font-weight: 400;
+}
+
+ .p{
+  font-weight: 500;
+}
+
+.green-fig{
+  color: #8ACA2B;
+  font-weight: 500;
+
+}
+.txt{
+  color: black
+}
+
+
+.val{
+  color: red;
+  font-weight: 500;
+}
+.footer-container{
+  background-color: #f5f5f5;
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+  color: #8ACA2B;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+.footer-container span{
+  /* padding: 30px; */
+}
+
+
+/* ----------------------RESPONSIVENESS-------------------------------- */
+@media only screen and (max-width:350px){
+    
+  .patients{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    
+  }
+  .cases-holder{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    width: 100%;
+  
+  }
+
+}
+@media only screen and (max-width:600px){
+
+
+  .patients{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 20px;
+    width: 100%;
+    
+  }
+  .cases-holder{
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%;
+  
+  }
+
+}
+
+    
+@media only screen and (max-width:900px){
+  .patients{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-gap: 20px;
+    width: 100%;
+    
+  }
+  .cases-holder{
+    display: grid;
+    grid-template-columns: 3fr;
+    width: 100%;
+  
+  }
+  
+  @media only screen and (max-width:790px){
+
+    .patients{
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-gap: 20px;
+      width: 100%;
+      
+    }
+    .cases-holder{
+      display: grid;
+      grid-template-columns: 2fr;
+      width: 100%;
+    
+    }
+  }
+
+
+}
